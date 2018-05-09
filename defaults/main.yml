@@ -1,0 +1,9 @@
+
+
+backup_jenkins_home: "/home/{{ OWNER }}/.jenkins"
+
+backup_script_dir: "{{ backup_jenkins_home }}/scripts/"
+
+backup_dir: "{{ backup_jenkins_home }}/backup/config"
+
+backup_file_name: "jenkins-config-backup_`date +\"%Y%m%d%H%M%S\"`.tar.gz"
